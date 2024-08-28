@@ -1,0 +1,68 @@
+﻿@page "/"
+@inject NotificationService NotificationService
+
+@inject NavigationManager NavigationManager
+
+<PageTitle>Home</PageTitle>
+
+<h1>Hello, susi!</h1>
+
+Welcome to your acces portal.
+
+
+<RadzenCard class="rz-my-12 rz-mx-auto rz-p-4 rz-p-md-12" style="max-width: 600px;">
+
+    <RadzenTemplateForm Data=@("LoginWithRemember")>
+        <RadzenLogin AllowResetPassword="true"
+            AllowRegister="false" 
+            Login=@(args => OnSubmit(args))
+            ResetPassword=@OnForgotPassword
+            Visible="@disable" />
+    </RadzenTemplateForm>
+
+    <div class="rz-m-12">
+        <RadzenProgressBar Value="100" ShowValue="false" Visible="@showingProgressBar" Mode="ProgressBarMode.Indeterminate" />
+    </div>
+
+</RadzenCard>
+
+@code {
+    string userName = "admin";
+    string password = "admin";
+    private bool showingProgressBar = false;
+    private bool disable = true;
+
+
+    private async Task OnSubmit(LoginArgs args)
+    {
+
+        if (userName == args.Username && password == args.Password)
+        {
+            NotificationService.Notify(new Radzen.NotificationMessage { Severity = Radzen.NotificationSeverity.Success, Summary = "Login Successful", Detail = "You have logged in successfully.", Duration = 4000 });
+
+            showingProgressBar = true;
+            disable = false;
+
+            StateHasChanged();
+
+            await Task.Delay(4000);
+
+            NavigationManager.NavigateTo("/counter");
+        }
+        else
+        {
+            NotificationService.Notify(new Radzen.NotificationMessage { Severity = Radzen.NotificationSeverity.Error, Summary = "Login Failed", Detail = "Invalid username or password.", Duration = 4000 });
+        }
+    }
+
+    private void OnForgotPassword()
+    {
+        NotificationService.Notify(new Radzen.NotificationMessage
+            {
+                Severity = Radzen.NotificationSeverity.Info,
+                Summary = "Password Hint",
+                Detail = "Your username is admin and your password starts with ad***.",
+                Duration = 7000
+            });
+    }
+}

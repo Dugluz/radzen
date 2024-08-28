@@ -1,0 +1,62 @@
+﻿@page "/counter"
+
+@inject NotificationService NotificationService
+
+<PageTitle>Counter</PageTitle>
+
+<h1>Counter</h1>
+
+<p role="status">Current count: @currentCount</p>
+
+
+<RadzenButton Click="@ButtonClicked" Text="Click me" ButtonStyle=@buttonStyle></RadzenButton>
+
+
+@code {
+    private int currentCount = 0;
+    private ButtonStyle buttonStyle = ButtonStyle.Primary;
+
+    void ButtonClicked()
+    {
+        currentCount++;
+        if (currentCount % 5 == 0)
+        {
+            // Notificar cada 100 clics
+            NotificationService.Notify(new NotificationMessage
+                {
+                    Severity = NotificationSeverity.Info,
+                    Summary = "Hey, look at this",
+                    Detail = $"You have clicked the button {currentCount} times!"
+                });
+        }
+        // Cambiar el estilo del botón cada 10 clics
+        if (currentCount % 10 == 0)
+        {
+            switch ((currentCount / 10) % 7)
+            {
+                case 1:
+                    buttonStyle = ButtonStyle.Secondary;
+                    break;
+                case 2:
+                    buttonStyle = ButtonStyle.Base;
+                    break;
+                case 3:
+                    buttonStyle = ButtonStyle.Info;
+                    break;
+                case 4:
+                    buttonStyle = ButtonStyle.Success;
+                    break;
+                case 5:
+                    buttonStyle = ButtonStyle.Warning;
+                    break;
+                case 6:
+                    buttonStyle = ButtonStyle.Danger;
+
+                    break;
+                default:
+                    buttonStyle = ButtonStyle.Primary;
+                    break;
+            }
+        }
+    }
+}

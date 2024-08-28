@@ -1,0 +1,30 @@
+﻿@page "/weather"
+
+@inject WeatherService WeatherService
+
+<PageTitle>Weather</PageTitle>
+
+<h1>Weather</h1>
+
+<p>This component demonstrates fetching data from the server.</p>
+
+<RadzenDataGrid AllowFiltering="true" AllowColumnPicking="true"
+    TItem="WeatherInfo" Data="@weatherData" AllowColumnReorder="true"
+    ColumnWidth="200px" AllowPaging="true" PageSize="5" AllowSorting="true">
+    <Columns>
+        <RadzenDataGridColumn TItem="WeatherInfo" Property="Country" Title="Country" />
+        <RadzenDataGridColumn TItem="WeatherInfo" Property="City" Title="City" />
+        <RadzenDataGridColumn TItem="WeatherInfo" Property="Temperature" Title="Temperature (°C)" />
+        <RadzenDataGridColumn TItem="WeatherInfo" Property="Humidity" Title="Humidity (%)" />
+        <RadzenDataGridColumn TItem="WeatherInfo" Property="WindSpeed" Title="Wind Speed (km/h)" />
+    </Columns>
+</RadzenDataGrid>
+
+@code {
+    private List<WeatherInfo> weatherData;
+
+    protected override async Task OnInitializedAsync()
+    {
+        weatherData = await WeatherService.GetWeatherDataAsync();
+    }
+}

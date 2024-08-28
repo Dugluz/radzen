@@ -1,0 +1,95 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\dssal\\source\\repos\\radzen\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{2BDCA530-E618-4503-8F79-E5837E753046}|radzen\\radzen.csproj|c:\\users\\dssal\\source\\repos\\radzen\\radzen\\pages\\weather.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{2BDCA530-E618-4503-8F79-E5837E753046}|radzen\\radzen.csproj|solutionrelative:radzen\\pages\\weather.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2BDCA530-E618-4503-8F79-E5837E753046}|radzen\\radzen.csproj|c:\\users\\dssal\\source\\repos\\radzen\\radzen\\pages\\counter.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{2BDCA530-E618-4503-8F79-E5837E753046}|radzen\\radzen.csproj|solutionrelative:radzen\\pages\\counter.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2BDCA530-E618-4503-8F79-E5837E753046}|radzen\\radzen.csproj|c:\\users\\dssal\\source\\repos\\radzen\\radzen\\pages\\dropit.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{2BDCA530-E618-4503-8F79-E5837E753046}|radzen\\radzen.csproj|solutionrelative:radzen\\pages\\dropit.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2BDCA530-E618-4503-8F79-E5837E753046}|radzen\\radzen.csproj|c:\\users\\dssal\\source\\repos\\radzen\\radzen\\layout\\navmenu.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{2BDCA530-E618-4503-8F79-E5837E753046}|radzen\\radzen.csproj|solutionrelative:radzen\\layout\\navmenu.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Counter.razor",
+              "DocumentMoniker": "C:\\Users\\dssal\\source\\repos\\radzen\\radzen\\Pages\\Counter.razor",
+              "RelativeDocumentMoniker": "radzen\\Pages\\Counter.razor",
+              "ToolTip": "C:\\Users\\dssal\\source\\repos\\radzen\\radzen\\Pages\\Counter.razor",
+              "RelativeToolTip": "radzen\\Pages\\Counter.razor",
+              "ViewState": "AQIAABIAAAAAAAAAAAAAAAIAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-08-25T10:39:26.97Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "DropIt.razor",
+              "DocumentMoniker": "C:\\Users\\dssal\\source\\repos\\radzen\\radzen\\Pages\\DropIt.razor",
+              "RelativeDocumentMoniker": "radzen\\Pages\\DropIt.razor",
+              "ToolTip": "C:\\Users\\dssal\\source\\repos\\radzen\\radzen\\Pages\\DropIt.razor",
+              "RelativeToolTip": "radzen\\Pages\\DropIt.razor",
+              "ViewState": "AQIAADYAAAAAAAAAAAAAAD8AAAAUAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-08-24T21:19:48.736Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Weather.razor",
+              "DocumentMoniker": "C:\\Users\\dssal\\source\\repos\\radzen\\radzen\\Pages\\Weather.razor",
+              "RelativeDocumentMoniker": "radzen\\Pages\\Weather.razor",
+              "ToolTip": "C:\\Users\\dssal\\source\\repos\\radzen\\radzen\\Pages\\Weather.razor",
+              "RelativeToolTip": "radzen\\Pages\\Weather.razor",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAAA4AAAAdAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-08-24T18:23:22.158Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "NavMenu.razor",
+              "DocumentMoniker": "C:\\Users\\dssal\\source\\repos\\radzen\\radzen\\Layout\\NavMenu.razor",
+              "RelativeDocumentMoniker": "radzen\\Layout\\NavMenu.razor",
+              "ToolTip": "C:\\Users\\dssal\\source\\repos\\radzen\\radzen\\Layout\\NavMenu.razor",
+              "RelativeToolTip": "radzen\\Layout\\NavMenu.razor",
+              "ViewState": "AQIAABIAAAAAAAAAAAAUwCEAAABMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-08-24T18:15:27.198Z"
+            }
+          ]
+        },
+        {
+          "DockedWidth": 1354,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
